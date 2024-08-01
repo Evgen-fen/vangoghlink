@@ -1,0 +1,214 @@
+.section_title {
+	max-width: 651px;
+	max-height: 62px;
+	width: 100%;
+	height: 100%;
+	margin-top: 60px;
+
+	img.tablet {
+		@include full-screen {
+		display: none;
+		}	
+		@include tablet {
+			display: block;
+			}	
+	}
+
+	img.full-screen {
+		@include tablet {
+			display: none;
+			}	
+	}
+
+
+	@include laptop {
+		margin-top: 50px;
+		max-width: 474px;
+		max-height: 45px;
+	}
+
+	@include tablet {
+		max-width: 229px;
+		max-height: 68px;
+	}
+
+}
+
+.section_block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 50px 40px;
+	width: 100%;
+	height: 100%;
+	margin-top: 40px;
+
+	@include desktop {
+		gap: 50px 30px;
+	}
+
+	@include laptop {
+		justify-content: space-between;
+	}
+
+	@include mobile {
+		gap: 30px 10px;
+		margin-top: 60px;
+	}
+
+	.section_block-element {	
+		max-width: 320px;
+		max-height: 565px;
+		width: 100%;
+		height: 100%;
+
+		@include desktop {
+			max-width: 287px;
+			max-height: 516px;
+		}
+
+		@include tablet {
+			max-width: 220px;
+			max-height: 420px;
+		}
+
+		@include mobile-above {
+			max-width: 165px;
+			max-height: 330px;
+		}
+
+		@include mobile {
+			max-width: 145px;
+			max-height: 310px;
+		}
+
+		.block-element--image {
+			position: relative;
+			
+			img {
+				border-radius: 20px;
+			}
+
+
+			button.promotion,
+			button.more_details {
+				display: none;
+				transition: 0.4s;
+			}
+
+			button.promotion.active {
+				position: absolute;
+				display: block;
+				left: 10px;
+				top: 10px;
+				width: 126px;
+				height: 38px;
+				border-radius: 100px;
+				background-color: var(--color-black);
+
+				@include tablet {
+					width: 70px;
+					height: 24px;
+
+					button {
+						font-size: 14px;
+						line-height: 19.6px;
+					}
+				}
+			}
+
+			button.more_details.active {
+				position: absolute;
+				display: block;
+				left: 31px;
+				top: 409px;
+				width: 258px;
+				height: 48px;
+				background-color: var(--color-red);
+				border-radius: 100px;
+				border: none;
+				opacity: 0;
+				transition: 0.4s;
+
+				@include desktop {
+					left: 10px;
+					top: 362px;
+				}
+
+				@include tablet {
+					width: 201px;
+					height: 35px;
+					top: 280px;
+				}
+
+				@include mobile-above {
+					width: 145px;
+					height: 30px;
+					top: 209px;
+				}
+
+				@include mobile {
+					width: 127px;
+					height: 27px;
+					top: 185px;
+				}
+			}
+
+			.block-element--image .active {
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 20%;
+				left: 0;
+				bottom: 0;
+				background-color: var(--color-grey);
+				border-radius: 0px 0px 20px 20px;
+				opacity: 0;
+			}
+		}
+
+		.block-element--image:hover .active {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 20%;
+			left: 0;
+			bottom: 0;
+			background-color: var(--color-white);
+			border-radius: 0px 0px 20px 20px;
+			opacity: 70%;
+
+		}
+		
+		.block-element--image:hover	button.active {
+			opacity: 1;
+			transition: 0.4s;
+		}
+
+		.block-element--image:active button.active {
+			opacity: 1;
+			transform: scale(0.7);
+		}
+
+
+
+		.block-element--description {
+			margin-top: 20px;
+		}
+
+		.block-element--price {
+			display: flex;
+			flex-direction: row;
+			align-items: start;
+			column-gap: 16px;
+			margin-top: 12px;
+
+			.price_sale {
+				display: none;
+			}
+			.price_sale.active {
+				display: block;
+			}
+		}
+	}
+}

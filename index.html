@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing-page</title>
+	<link rel="stylesheet" href="main/main.css">
+</head>
+<body>
+	<main class="container">
+
+		<div class="wrapper bg_black">
+			<div class="wrapper-inner">
+				<div class="topline">
+					<div class="element white lato-regular">
+						<a>Доставка и оплата</a>
+					</div>
+					<div class="element white lato-regular">
+						<a>Гарантия и возврат</a>
+					</div>
+					<div class="element white lato-regular">
+						<a>EN</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<header class="wrapper">
+			<div class="wrapper-inner header_wrapper">
+				<div class="header_logo">
+					<img src="images/Logo_black.svg" alt="">
+				</div>
+				<div class="header_nav-link">
+					<ul>
+						<li><a class="black" href="">Каталог</a></li>
+						<li><a class="black" href="">О компании</a></li>
+						<li><a class="black" href="">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="header_nav-shop">
+					<div class="nav_shop_search">	
+							<input type="text" placeholder="Лампа">
+							<button class="search">
+								<img src="images/search-normal.svg" alt="">
+							</button>
+					</div>
+					<button class="basket">
+						<div class="basket_svg">
+							<img src="images/Bag.svg" alt="">
+						</div>
+						<div class="basket_text white">Корзина</div>
+					</button>
+				</div>
+				<div class="dropdown">
+					<button class="burger-btn" onclick="toggleMenu()">
+						<img src="images/Menu Button.svg" alt="">
+					</button>
+					<div class="dropdown-content" id="dropdown">
+						<div class="header_nav-link">
+							<ul>
+								<li><a class="black" href="">Каталог</a></li>
+								<li><a class="black" href="">О компании</a></li>
+								<li><a class="black" href="">Контакты</a></li>
+								<li><a class="black" href="">Доставка и оплата</a></li>
+								<li><a class="black" href="">Гарантия и возврат</a></li>
+								<li><a class="black" href="">EN</a></li>
+							</ul>
+						</div>
+						<div class="header_nav-shop">
+							<div class="nav_shop_search">	
+									<input type="text" placeholder="Лампа">
+									<button class="search">
+										<img src="images/search-normal.svg" alt="">
+									</button>
+							</div>
+							<button class="basket">
+								<div class="basket_svg">
+									<img src="images/Bag.svg" alt="">
+								</div>
+								<div class="basket_text white">Корзина</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="wrapper">
+			<div class="wrapper-inner">
+			<div class="section_title black">
+				<img class="full-screen" src="images/Результаты поиска.png" alt="">
+				<img class="tablet" src="images/Результаты поиска-mobile.svg" alt="">
+			</div>
+			<div class="section_block">
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_1.png" alt="">
+						<button class="promotion active white">Акция</button>
+						<div class="more_details-wrapper-bg active"></div>
+						<button class="more_details active white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Встраиваемый светильник Markt</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual red">3 490 ₽</h2>
+						<h2 class="price_sale grey active"><del>5 060 ₽</del></h2>
+					</div>
+				</div>
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_2.png" alt="">
+						<button class="promotion white">Акция</button>
+						<button class="more_details white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Линейный светильник ARG</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual black">6 700 ₽</h2>
+						<h2 class="price_sale grey"><del>₽</del></h2>
+					</div>
+				</div>
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_3.png" alt="">
+						<button class="promotion active white">Акция</button>
+						<div class="more_details-wrapper-bg active"></div>
+						<button class="more_details active white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Сведодиодный светильник</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual red">5 060 ₽</h2>
+						<h2 class="price_sale grey active"><del>22 060 ₽</del></h2>
+					</div>
+				</div>
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_1.png" alt="">
+						<button class="promotion white">Акция</button>
+						<button class="more_details white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Встраиваемый светильник Markt</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual black">3 490 ₽</h2>
+						<h2 class="price_sale grey"><del>₽</del></h2>
+					</div>
+				</div>
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_2.png" alt="">
+						<button class="promotion active white">Акция</button>
+						<div class="more_details-wrapper-bg active"></div>
+						<button class="more_details active white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Линейный светильник ARG</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual red">6 700 ₽</h2>
+						<h2 class="price_sale grey active"><del>7 060 ₽</del></h2>
+					</div>
+				</div>
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_3.png" alt="">
+						<button class="promotion  white">Акция</button>
+						<button class="more_details white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Сведодиодный светильник</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual black">5 060 ₽</h2>
+					</div>
+				</div>
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_1.png" alt="">
+						<button class="promotion active white">Акция</button>
+						<div class="more_details-wrapper-bg active"></div>
+						<button class="more_details active white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Встраиваемый светильник Markt</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual red">3 490 ₽</h2>
+						<h2 class="price_sale grey active"><del>7 060 ₽</del></h2>
+					</div>
+				</div>
+				<div class="section_block-element">
+					<div class="block-element--image">
+						<img src="images/image_2.png" alt="">
+						<button class="promotion white">Акция</button>
+						<button class="more_details white">Подробнее</button>
+					</div>
+					<div class="block-element--description black lato-bold">
+						<h3>Линейный светильник ARG</h3>
+					</div>
+					<div class="block-element--price">
+						<h2 class="price_actual black">6 700 ₽</h2>
+						<h2 class="price_sale grey"><del>₽</del></h2>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+
+		<footer class="wrapper bg_black wrapper_footer">
+			<div class="wrapper-inner">
+				<div class="wrapper-inner--desktop">
+					<div class="footer_element_wrapper first">
+						<div class="footer_element footer-logo">
+							<img src="images/Logo_white.svg" alt="">
+						</div>
+						<div class="footer_element footer-secure grey roboto-regular">
+							<p>Этот сайт защищен от спама службой reCAPTCHA Google. Политика конфиденциальности/Условия предоставления услуг</p>
+						</div>
+					</div>
+
+					<div class="footer_element_wrapper second">
+						<div class="footer_element footer-address">
+							<div class="address-title white lato-bold">
+								<h4>Адрес</h4>
+							</div>
+							<a class="address-address white lato-regular">
+								<p>Текст, Текст, Текст</p>
+							</a>
+						</div>
+						<div class="footer_element footer-contacts white lato-bold">
+							<h4>Контакты</h4>
+							<p class="lato-regular">Email: urban.dwelling@yandex.com</p>
+							<p class="lato-regular">Телефон: 8 (999) 999-99-99</p>
+						</div>
+					</div>
+
+					<div class="footer_element_wrapper third">
+						<div class="footer_element footer-services white lato-bold">
+							<h4>Услуги</h4>
+							<ul>
+								<li><a class="white lato-regular" href="">Каталог</a></li>
+								<li><a class="white lato-regular" href="">О компании</a></li>
+								<li><a class="white lato-regular" href="">Контакты</a></li>
+								<li><a class="white lato-regular" href="">Доставка и оплата</a></li>
+								<li><a class="white lato-regular" href="">Гарантия и возврат</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer_element_wrapper four">
+						<div class="footer_element footer-copyright grey roboto-regular">
+							<ul>
+								<li><a class="grey lato-regular" href="">Публичная оферта</a></li>
+								<li><a class="grey lato-regular" href="">Политика персональных данных</a></li>
+							</ul>
+						</div>
+						<div class="footer-pay">
+							<div class="pay-icon mir">
+								<img src="images/mir.svg" alt="mir">
+							</div>
+							<div class="pay-icon visa">
+								<img src="images/visa.svg" alt="">
+							</div>
+							<div class="master_card">
+								<img src="images/master card.svg" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-inner--laptop">
+					<div class="footer_element_wrapper">
+						<div class="footer_element-top footer-logo">
+							<img src="images/Logo_white.svg" alt="">
+						</div>
+						<div class="footer_element-medium">
+							<div class="footer_element-medium-left">
+								<div class="footer_element footer-address">
+									<div class="address-title white lato-bold">
+										<h4>Адрес</h4>
+									</div>
+									<a class="address-address white lato-regular">
+										<p>Текст, Текст, Текст</p>
+									</a>
+								</div>
+								<div class="footer_element footer-copyright grey roboto-regular">
+									<ul>
+										<li><a class="grey lato-regular" href="">Публичная оферта</a></li>
+										<li><a class="grey lato-regular" href="">Политика персональных данных</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer_element-medium-center">
+								<div class="footer_element footer-contacts white lato-bold">
+									<h4>Контакты</h4>
+									<p class="lato-regular">Email: urban.dwelling@yandex.com</p>
+									<p class="lato-regular">Телефон: 8 (999) 999-99-99</p>
+								</div>
+							</div>
+							<div class="footer_element-medium-right">
+								<div class="footer_element footer-services white lato-bold">
+									<h4>Услуги</h4>
+									<ul>
+										<li><a class="white lato-regular" href="">Каталог</a></li>
+										<li><a class="white lato-regular" href="">О компании</a></li>
+										<li><a class="white lato-regular" href="">Контакты</a></li>
+										<li><a class="white lato-regular" href="">Доставка и оплата</a></li>
+										<li><a class="white lato-regular" href="">Гарантия и возврат</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="footer_element-bottom">
+							<div class="footer-pay">
+								<div class="pay-icon mir">
+									<img src="images/mir.svg" alt="mir">
+								</div>
+								<div class="pay-icon visa">
+									<img src="images/visa.svg" alt="">
+								</div>
+								<div class="master_card">
+									<img src="images/master card.svg" alt="">
+								</div>
+							</div>
+							<div class="footer_element footer-secure grey roboto-regular">
+								<p>Этот сайт защищен от спама службой reCAPTCHA Google. Политика конфиденциальности/Условия предоставления услуг</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper-inner--tablet">
+					<div class="footer_elements">
+						<div class="footer-logo">
+							<img src="images/Logo_white.svg" alt="">
+						</div>
+						<div class="footer-address">
+							<div class="address-title white lato-bold">
+								<h4>Адрес</h4>
+							</div>
+							<a class="address-address white lato-regular">
+								<p>Текст, Текст, Текст</p>
+							</a>
+						</div>
+						<div class="footer-contacts white lato-bold">
+							<h4>Контакты</h4>
+							<p class="lato-regular">Email: urban.dwelling@yandex.com</p>
+							<p class="lato-regular">Телефон: 8 (999) 999-99-99</p>
+						</div>
+						<div class="footer-services white lato-bold">
+							<h4>Услуги</h4>
+							<ul>
+								<li><a class="white lato-regular" href="">Каталог</a></li>
+								<li><a class="white lato-regular" href="">О компании</a></li>
+								<li><a class="white lato-regular" href="">Контакты</a></li>
+								<li><a class="white lato-regular" href="">Доставка и оплата</a></li>
+								<li><a class="white lato-regular" href="">Гарантия и возврат</a></li>
+							</ul>
+						</div>
+						<div class="footer-copyright grey roboto-regular">
+							<ul>
+								<li><a class="grey lato-regular" href="">Публичная оферта</a></li>
+								<li><a class="grey lato-regular" href="">Политика персональных данных</a></li>
+							</ul>
+						</div>
+						<div class="footer-pay">
+							<div class="pay-icon mir">
+								<img src="images/mir.svg" alt="mir">
+							</div>
+							<div class="pay-icon visa">
+								<img src="images/visa.svg" alt="">
+							</div>
+							<div class="master_card">
+								<img src="images/master card.svg" alt="">
+							</div>
+						</div>
+						<div class="footer-secure grey roboto-regular">
+							<p>Этот сайт защищен от спама службой reCAPTCHA Google. Политика конфиденциальности/Условия предоставления услуг</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>
