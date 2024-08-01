@@ -146,6 +146,10 @@
 				flex-direction: column;
 				align-items: center;
 				gap: 30px;
+
+				.nav_shop_search {
+					background-color: var(--color-white);
+				}
 			}
 		}
 		.burger-btn:active .dropdown-content {
