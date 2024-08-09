@@ -124,7 +124,7 @@
 				top: 409px;
 				width: 258px;
 				height: 48px;
-				background-color: var(--color-red);
+				background-color: var(--color-black);
 				border-radius: 100px;
 				border: none;
 				opacity: 0;
@@ -152,6 +152,9 @@
 					height: 27px;
 					top: 185px;
 				}
+			}
+			button.more_details:hover {
+			background-color: var(--color-red);
 			}
 
 			.block-element--image .active {
