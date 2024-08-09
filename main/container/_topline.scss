@@ -1,0 +1,14 @@
+.topline {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: end;
+	width: 100%;
+	min-height: 40px;
+	height: 100%;
+	column-gap: 70px;
+
+	@include laptop {
+		display: none;
+	}
+}
