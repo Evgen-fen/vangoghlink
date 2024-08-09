@@ -55,6 +55,7 @@
 				flex-grow: 1;
 				border: none;
 				outline: none;
+				font-size: 16px;
 			}
 
 			button {
@@ -67,7 +68,7 @@
 			}
 		}
 
-		.basket {
+		button.basket {
 			position: relative;
 			display: flex;
 			flex-direction: row;
@@ -75,6 +76,7 @@
 			width: 138px;
 			height: 39px;
 			border-radius: 100px;
+			border: none;
 			background-color: var(--color-black);
 			padding: 3.5px 19.17px;
 			column-gap: 5px;
@@ -98,6 +100,11 @@
 			.basket_text {
 				font-size: 15px;
 			}
+		}
+		
+		button.basket:hover {
+			background-color: var(--color-red);
+			transition: .4s;
 		}
 	}
 
